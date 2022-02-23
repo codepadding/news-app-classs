@@ -18,25 +18,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'News',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       initialRoute: 'splash-screen',
       routes: {
         "splash-screen": (context) => const SplashScreen(),
         "home-page": (context) => const HomePage(),
-        "news-details": (context) => const NewsDetailsPage(),
+        // "news-details": (context) => const NewsDetailsPage(),
         "category-list": (context) => const CategoryPage(),
-        "news-list": (context) => const NewsListPage(),
-        "news-search": (context) => const NewsDetailsPage(),
+        // "news-list": (context) => NewsListPage(),
+        // "news-search": (context) => const NewsDetailsPage(),
       },
     );
   }

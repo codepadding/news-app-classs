@@ -1,12 +1,11 @@
 var apiKey = "4a0001fa46f1416e9b43ffc96652dc43";
 // Get the current top headlines for a country or category
-var headlineAPI = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + apiKey;
+var homePageApi =
+    "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + apiKey;
 
 getCateroryNews(category) {
-  var categoryNews =
-      "https://newsapi.org/v2/everything?q=${category}&from=2022-02-19&sortBy=popularity&apiKey=" +
-          apiKey;
-  return categoryNews;
+  return "https://newsapi.org/v2/everything?q=${category}&from=2022-02-19&sortBy=popularity&apiKey=" +
+      apiKey;
 }
 
 searchNews(key) {
@@ -16,4 +15,10 @@ searchNews(key) {
   return api;
 }
 
-var newsBanners = "https: //newsapi.org/v2/everything?q=cryptocurrency&from=2022-02-19&sortBy=popularity&apiKey=" + apiKey;
+var newsBanners =
+    "https: //newsapi.org/v2/everything?q=cryptocurrency&from=2022-02-19&sortBy=popularity&apiKey=" +
+        apiKey;
+
+var latestNews =
+    "https: //newsapi.org/v2/everything?q=latest&from=2022-02-19&sortBy=popularity&apiKey=" +
+        apiKey;
