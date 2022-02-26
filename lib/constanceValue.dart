@@ -8,7 +8,7 @@ getCateroryNews(category) {
       apiKey;
 }
 
-searchNews(key) {
+searchNewsApi(key) {
   var api =
       "https://newsapi.org/v2/everything?q=${key}&from=2022-02-19&sortBy=popularity&apiKey=" +
           apiKey;

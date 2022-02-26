@@ -3,6 +3,7 @@ import 'package:news/pages/CategoryPage.dart';
 import 'package:news/pages/HomePage.dart';
 import 'package:news/pages/NewsDetailsPage.dart';
 import 'package:news/pages/NewsListPage.dart';
+import 'package:news/pages/NewsSearchpage.dart';
 import 'package:news/pages/SplashScreen.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // "news-details": (context) => const NewsDetailsPage(),
         "category-list": (context) => const CategoryPage(),
         // "news-list": (context) => NewsListPage(),
-        // "news-search": (context) => const NewsDetailsPage(),
+        "news-search": (context) => NewsSearch(),
       },
     );
   }
